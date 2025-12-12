@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+/* 1. Define the custom font */
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
+}
+
+/* 2. Map it to a Tailwind variable */
+@theme {
+  --font-montserrat: "Montserrat", sans-serif;
+}
+
+@variant dark (&:where(.dark, .dark *));
+
+body {
+  @apply bg-white text-gray-700 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300;
+}

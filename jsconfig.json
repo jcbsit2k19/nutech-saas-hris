@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".", // Important: This sets the base for resolving non-relative modules
+    "paths": {
+      "@components/*": ["src/components/*"],
+      "@assets/*": ["src/assets/*"],
+      "@pages/*": ["src/pages/*"],
+      "@utils/*": ["src/utils/*"],
+      "@layouts/*": ["src/layouts/*"],
+      "@helpers/*": ["src/helpers/*"],
+      "@features/*": ["src/features/*"],
+      "@hooks/*": ["src/hooks/*"],
+      "@custom-components/*": ["src/custom-components/*"],
+      "@contexts/*": ["src/contexts/*"]
+    }
+  },
+  "include": [
+    "src/**/*" // This tells VS Code which files to include for language services
+  ],
+  "exclude": ["node_modules", "dist"]
+}
