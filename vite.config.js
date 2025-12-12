@@ -17,7 +17,6 @@ export default defineConfig(({ mode }) => {
       }),
       tailwindcss(),
     ],
-    base: "/hris/",
     build: {
       chunkSizeWarningLimit: 1500,
     },
